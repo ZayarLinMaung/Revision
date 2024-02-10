@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+  width: 98.8vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.contentbox1 {
+  height: 93vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("netflix_1.jpg_554688468.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  border-bottom: 10px solid grey;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 700px;
+  align-items: center;
+  padding: 10px;
+}
+.navbar button {
+  padding: 15px;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+  font-weight: bolder;
+}
+.intro {
+  margin-top: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro h1 {
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.intro h3 {
+  font-weight: lighter;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.intro p {
+  font-size: 20px;
+}
+.getstarted {
+  display: flex;
+  gap: 10px;
+}
+.getstarted input {
+  padding: 15px;
+  opacity: 30px;
+  width: 300px;
+  background: transparent;
+  border: 2px solid rgb(98, 97, 97);
+  border-radius: 10px;
+}
+.getstarted button {
+  color: white;
+  background-color: #e50914;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 20px;
+}
+.contentbox2 {
+  height: 75vh;
+  padding: 0px;
+  border-bottom: 10px solid grey;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  width: 520px;
+}
+.text h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.text p {
+  font-size: 20px;
+}
