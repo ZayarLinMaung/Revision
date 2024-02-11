@@ -8,13 +8,13 @@ body {
 }
 
 .contentbox1 {
-  height: 93vh;
+  height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("netflix_1.jpg_554688468.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
-  border-bottom: 10px solid grey;
+  border-bottom: 10px solid #808080;
 }
 .navbar {
   display: flex;
@@ -70,13 +70,14 @@ body {
   border: none;
   padding: 15px;
   border-radius: 10px;
-  width: 150px;
+  width: 180px;
   font-size: 20px;
+  font-weight: bolder;
 }
 .contentbox2 {
   height: 75vh;
   padding: 0px;
-  border-bottom: 10px solid grey;
+  border-bottom: 10px solid #808080;
   display: flex;
   color: white;
   align-items: center;
@@ -91,4 +92,88 @@ body {
 }
 .text p {
   font-size: 20px;
+}
+.contentbox3 {
+  height: 55vh;
+  padding: 0px;
+  border-bottom: 10px solid #808080;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.textbox {
+  width: 350px;
+  margin-left: -500px;
+}
+.text2 h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.text2 p {
+  font-size: 20px;
+}
+.contentbox4 {
+  height: 93vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  border-bottom: 10px solid #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contentbox4 h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+.contentbox4 div a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #2d2d2d;
+  padding: 24px;
+  width: 1100px;
+  display: block;
+  margin-bottom: 10px;
+}
+.contentbox4 div a:hover {
+  background-color: #5c5b5b;
+}
+.contentbox4 p {
+  color: white;
+}
+.last input {
+  padding: 15px;
+  opacity: 30px;
+  width: 300px;
+  background: transparent;
+  border: 2px solid rgb(98, 97, 97);
+  border-radius: 7px;
+  color: white;
+}
+.last button {
+  color: white;
+  background-color: #e50914;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  width: 180px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  padding: 100px;
+}
+.footer div a {
+  display: block;
+  color: #adadad;
+  margin-bottom: 10px;
 }
