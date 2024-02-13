@@ -93,7 +93,7 @@ body {
   font-size: 20px;
 }
 .contentbox3 {
-  height: 55vh;
+  height: 75vh;
   padding: 0px;
   border-bottom: 10px solid #808080;
   display: flex;
@@ -113,7 +113,13 @@ body {
   font-size: 20px;
 }
 .contentbox4 {
+<<<<<<< HEAD:Day4(Netflix)/style.css
   height: 93vh;
+=======
+  height: 123vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+>>>>>>> 1c7f74099e775d2dcede9e0d7b865f8445d6519c:Day4+5(Netflix)/style.css
   padding: 10px;
   border-bottom: 10px solid #808080;
   display: flex;
