@@ -1,12 +1,11 @@
 body {
   font-family: sans-serif;
-  width: 98.8vw;
+  width: 99vw;
   height: 100vh;
   margin: 0;
   padding: 0;
   background: black;
 }
-
 .contentbox1 {
   height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -115,8 +114,6 @@ body {
 }
 .contentbox4 {
   height: 93vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px;
   border-bottom: 10px solid #808080;
   display: flex;
@@ -176,4 +173,182 @@ body {
   display: block;
   color: #adadad;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .contentbox1 {
+    width: auto;
+    height: 50vh;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 300px;
+    align-items: center;
+  }
+  .navbar button {
+    padding: 15px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+
+    font-weight: bolder;
+  }
+  .intro {
+    margin-top: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .intro h3 {
+    font-weight: lighter;
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+  .getstarted {
+    display: flex;
+    gap: 10px;
+  }
+  .getstarted input {
+    padding: 15px;
+    opacity: 30px;
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgb(98, 97, 97);
+    border-radius: 10px;
+  }
+  .getstarted button {
+    width: 180px;
+  }
+  .contentbox2 {
+    height: 50vh;
+    width: 100vw;
+    border-bottom: 10px solid #808080;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    width: 520px;
+    margin: 30px;
+  }
+  .text h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .text p {
+    font-size: 20px;
+  }
+  .contentbox2 img {
+    height: 300px;
+  }
+  .contentbox3 {
+    height: 50vh;
+    width: 100vw;
+    padding: 0px;
+    border-bottom: 10px solid #808080;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .textbox {
+    width: 768px;
+    margin-left: 50px;
+  }
+  .text2 h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .text2 p {
+    font-size: 20px;
+  }
+  .contentbox3 img {
+    width: 300px;
+  }
+  .contentbox4 {
+    height: 80vh;
+    width: 100vw;
+    padding: 10px;
+    border-bottom: 10px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contentbox4 h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    width: 1000px;
+  }
+  .contentbox4 div a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #2d2d2d;
+    padding: 24px;
+    width: 400px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contentbox4 div a:hover {
+    background-color: #5c5b5b;
+  }
+  .contentbox4 p {
+    color: white;
+  }
+  .last input {
+    padding: 15px;
+    opacity: 30px;
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgb(98, 97, 97);
+    border-radius: 7px;
+    color: white;
+  }
+  .last button {
+    color: white;
+    background-color: #e50914;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .footer {
+    width: 70vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 250px);
+    gap: 30px;
+    margin-left: 20vw;
+    padding: 30px;
+  }
+  .footer div a {
+    display: block;
+    color: #adadad;
+    margin-bottom: 10px;
+  }
 }
