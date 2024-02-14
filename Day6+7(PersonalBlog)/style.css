@@ -7,7 +7,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 150px 350px 500px 500px 100px;
+  grid-template-rows: 100px 150px 350px 700px 1000px 500px 300px;
 }
 /* just giving padding to the divs */
 header,
@@ -18,10 +18,10 @@ footer {
 }
 
 .head {
-  grid-column: 1/5;
+  grid-column: 1/4;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(226, 204, 180);
+  background-color: rgb(180, 226, 224);
 }
 header {
   grid-column: 1/2;
@@ -57,29 +57,30 @@ header {
   margin-right: 20px;
 }
 
-/* the following codes are for smain content */
+/* the following codes are for main content */
 .maincontent {
-  grid-column: 1/5;
+  grid-column: 1/4;
   grid-row: 2/4;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(223, 194, 162);
+  background-color: rgb(170, 209, 208);
 }
 .maincontent .home {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-.img1 {
+.profileimg {
   grid-column: 2/3;
   grid-row: 1/4;
   margin-left: 40px;
   align-self: center;
 }
-.img1 img {
+.profileimg img {
   width: 140%;
   height: auto;
   border-radius: 100%;
+  margin-top: 50px;
+  box-shadow: 10px 10px 10px rgb(62, 62, 62);
 }
 .text1 {
   grid-column: 4/6;
@@ -90,26 +91,78 @@ header {
   text-align: justify;
 }
 /* Code for projects */
-
+.projects {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  grid-template-rows: 50px 650px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(145, 234, 229);
+  padding: 20px;
+}
+.projects .title {
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.projects .project1,
+.projects .project2,
+.projects .project3,
+.projects .project4 {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(245, 222, 158);
+}
+.projects .project1 img,
+.projects .project2 img,
+.projects .project3 img,
+.projects .project4 img {
+  width: 300px;
+  height: 200px;
+}
+/* Code for achievements */
+.achievements {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(121, 209, 205);
+}
 /* Code for footer */
+
 .footer {
   grid-column: 1/4;
-  grid-row: -1;
-  background-color: rgb(233, 215, 197);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-row: 7/8;
+  background-color: rgb(69, 222, 214);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 100px;
   padding: 30px;
 }
 .footer .div1 {
   grid-column: 2/3;
   text-align: justify;
+  align-self: center;
+  width: 300px;
 }
 .footer .div2 {
   grid-column: 3/4;
   text-align: justify;
+  width: 300px;
 }
 .footer .div3 {
   grid-column: 4/5;
   text-align: justify;
+  width: 300px;
 }
