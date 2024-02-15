@@ -76,7 +76,7 @@ header {
   align-self: center;
 }
 .profileimg img {
-  width: 140%;
+  width: 100%;
   height: auto;
   border-radius: 100%;
   margin-top: 50px;
@@ -86,10 +86,11 @@ header {
   grid-column: 4/6;
   grid-row: 1/4;
   align-self: center;
-  font-size: 20px;
   margin-right: 40px;
   text-align: justify;
+  font-size: 30px;
 }
+
 /* Code for projects */
 .projects {
   grid-column: 1/4;
@@ -99,7 +100,7 @@ header {
   grid-template-rows: 50px 650px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(145, 234, 229);
+  background-color: rgb(160, 225, 222);
   padding: 20px;
 }
 .projects .title {
@@ -133,17 +134,24 @@ header {
 .achievements {
   grid-column: 1/4;
   grid-row: 5/6;
-  display: flex;
-  justify-content: end;
+  display: grid;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(121, 209, 205);
+  background-color: rgb(147, 207, 204);
+}
+.achievements h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.achievements img {
+  align-self: center;
 }
 /* Code for footer */
 
 .footer {
   grid-column: 1/4;
   grid-row: 8/9;
-  background-color: rgb(112, 197, 193);
+  background-color: rgb(89, 198, 193);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
