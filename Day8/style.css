@@ -7,7 +7,7 @@ body {
 .grid1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 1000px 250px;
+  grid-template-rows: 100px 1100px 250px;
   grid-template-areas:
     "navbar navbar navbar"
     "body body body"
@@ -28,6 +28,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "navleft navmiddle navright";
+  justify-content: center;
   align-items: center;
   border-bottom: 4px solid #52eae7;
 }
@@ -37,12 +38,14 @@ body {
 .navmiddle {
   grid: flex;
   align-items: center;
+  justify-content: center;
 }
 .navmiddle ul {
   list-style-type: none;
   display: flex;
   gap: 40px;
   font-size: 25px;
+  justify-content: center;
 }
 .navmiddle ul li a {
   text-decoration: none;
@@ -107,6 +110,18 @@ body {
     "course1 course2 course3"
     "course4 course5 course6"
     "pag pag pag";
+  border-bottom: 3px solid #52eae7;
+}
+.body3 {
+  grid-area: body;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px repeat(2, 430px) 100px;
+  grid-template-areas:
+    "header header"
+    "course1 course2"
+    "course3 course4"
+    "pag pag";
   border-bottom: 3px solid #52eae7;
 }
 h1 {
@@ -342,6 +357,35 @@ h1 {
   text-decoration: none;
   font-size: 15px;
 }
+
+.course4_2 {
+  grid-area: course4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border: 3px solid #52eae7;
+  border-radius: 40px;
+  margin: 25px;
+}
+.course4_2 h1 {
+  font-size: 30px;
+}
+.course4_2 img {
+  width: 150px;
+  height: 150px;
+}
+.course4_2 button {
+  width: 150px;
+  padding: 15px;
+  background-color: #52eae7;
+  border-radius: 30px;
+}
+.course4_2 button a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
 .pagination {
   grid-area: pag;
   display: flex;
@@ -391,4 +435,911 @@ h1 {
 }
 .footer .right p {
   color: white;
+}
+/* for 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 1100px 350px;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "body body body"
+      "footer footer footer";
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 1500px 350px;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "body body body"
+      "footer footer footer";
+  }
+  .navbar {
+    grid-area: navbar;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navleft"
+      "navmiddle"
+      "navright";
+    align-items: center;
+    border-bottom: 4px solid #52eae7;
+  }
+  .navleft {
+    grid-area: navleft;
+    display: flex;
+    justify-content: center;
+  }
+  .navleft img {
+    width: 130px;
+  }
+  .navmiddle {
+    grid-area: navmiddle;
+    grid: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navmiddle ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .navmiddle ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .navright {
+    grid-area: navright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+  }
+  .navright i {
+    color: white;
+    border: 3px solid #52eae7;
+    padding: 10px;
+    border-radius: 40px;
+  }
+  /* end of navbar */
+  .body1 {
+    grid-area: body;
+    display: flex;
+    width: 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 4px solid #52eae7;
+  }
+  .body1 .row1 h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .body1 .row1 h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .body1 .row1 h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .getstarted {
+    background-color: #52eae7;
+    border-style: none;
+    padding: 15px;
+    font-size: 15px;
+    width: 200px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  /* end of body1 */
+  .body2 {
+    grid-area: body;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px repeat(3, 430px);
+    grid-template-areas:
+      "header header"
+      "course1 course2"
+      "course3 course4"
+      "course5 course6"
+      "pag pag";
+    border-bottom: 3px solid #52eae7;
+  }
+  .body3 {
+    grid-area: body;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px repeat(2, 430px);
+    grid-template-areas:
+      "header header"
+      "course1 course2"
+      "course3 course4"
+      "pag pag";
+    border-bottom: 3px solid #52eae7;
+  }
+  h1 {
+    font-size: 40px;
+    grid-area: header;
+    text-align: center;
+  }
+  .course1 {
+    grid-area: course1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course1 h1 {
+    font-size: 30px;
+  }
+  .course1 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course1 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course1 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course2 {
+    grid-area: course2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course2 h1 {
+    font-size: 30px;
+  }
+  .course2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course3 {
+    grid-area: course3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course3 h1 {
+    font-size: 30px;
+  }
+  .course3 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course3 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course3 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course4 {
+    grid-area: course4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course4 h1 {
+    font-size: 30px;
+  }
+  .course4 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course4 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course4 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course5 {
+    grid-area: course5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course5 h1 {
+    font-size: 30px;
+  }
+  .course5 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course5 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course5 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course6 {
+    grid-area: course6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course6 h1 {
+    font-size: 30px;
+  }
+  .course6 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course6 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course6 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course1_2 {
+    grid-area: course1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course1_2 h1 {
+    font-size: 30px;
+  }
+  .course1_2 img {
+    width: 200px;
+    height: 150px;
+  }
+  .course1_2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course1_2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course2_2 {
+    grid-area: course2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course2_2 h1 {
+    font-size: 30px;
+  }
+  .course2_2 img {
+    width: 220px;
+    height: 250px;
+  }
+  .course2_2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course2_2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course4_2 {
+    grid-area: course4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course4_2 h1 {
+    font-size: 30px;
+  }
+  .course4_2 img {
+    width: 100px;
+    height: 100px;
+  }
+  .course4_2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course4_2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .pagination {
+    grid-area: pag;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .pagination a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #52eae7;
+    text-align: center;
+  }
+  .active {
+    border: 3px solid #52eae7;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  /* end of body2 */
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer .left {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+  .footer .left a {
+    text-decoration: none;
+    color: grey;
+  }
+  .footer .left p {
+    color: white;
+  }
+  .footer .right {
+    margin: 0;
+    width: 250px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .footer .right i {
+    margin-right: 20px;
+  }
+  .footer .right p {
+    color: white;
+  }
+}
+/* for 320-425px */
+@media (min-width: 320px) and (max-width: 425px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 1000px 350px;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "body body body"
+      "footer footer footer";
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 2800px 250px;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "body body body"
+      "footer footer footer";
+  }
+  .navbar {
+    grid-area: navbar;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navleft"
+      "navmiddle"
+      "navright";
+    align-items: center;
+    border-bottom: 4px solid #52eae7;
+  }
+  .navleft {
+    grid-area: navleft;
+    display: flex;
+    justify-content: center;
+  }
+  .navleft img {
+    width: 130px;
+  }
+  .navmiddle {
+    grid-area: navmiddle;
+    grid: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navmiddle ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .navmiddle ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .navright {
+    grid-area: navright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
+  .navright i {
+    color: white;
+    border: 3px solid #52eae7;
+    padding: 10px;
+    border-radius: 40px;
+  }
+  /* end of navbar */
+  .body1 {
+    grid-area: body;
+    display: flex;
+    width: 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 4px solid #52eae7;
+  }
+  .body1 .row1 h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .body1 .row1 h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .body1 .row1 h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .body1 img {
+    width: 400px;
+  }
+  .getstarted {
+    background-color: #52eae7;
+    border-style: none;
+    padding: 15px;
+    font-size: 15px;
+    width: 200px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  /* end of body1 */
+  .body2 {
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(6, 430px) 100px;
+    grid-template-areas:
+      "header"
+      "course1"
+      "course2"
+      "course3"
+      "course4"
+      "course5"
+      "course6"
+      "pag";
+    border-bottom: 3px solid #52eae7;
+  }
+  .body3 {
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(4, 430px) 100px;
+    grid-template-areas:
+      "header"
+      "course1"
+      "course2"
+      "course3"
+      "course4"
+      "pag";
+    border-bottom: 3px solid #52eae7;
+  }
+  h1 {
+    font-size: 40px;
+    grid-area: header;
+    text-align: center;
+  }
+  .course1 {
+    grid-area: course1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course1 h1 {
+    font-size: 30px;
+  }
+  .course1 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course1 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course1 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course2 {
+    grid-area: course2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course2 h1 {
+    font-size: 30px;
+  }
+  .course2 img {
+    width: 110px;
+    height: 110px;
+  }
+  .course2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course3 {
+    grid-area: course3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course3 h1 {
+    font-size: 30px;
+  }
+  .course3 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course3 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course3 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course4 {
+    grid-area: course4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course4 h1 {
+    font-size: 30px;
+  }
+  .course4 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course4 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course4 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .course5 {
+    grid-area: course5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course5 h1 {
+    font-size: 30px;
+  }
+  .course5 img {
+    width: 125px;
+    height: 125px;
+  }
+  .course5 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course5 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course6 {
+    grid-area: course6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course6 h1 {
+    font-size: 30px;
+  }
+  .course6 img {
+    width: 150px;
+    height: 150px;
+  }
+  .course6 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course6 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course1_2 {
+    grid-area: course1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course1_2 h1 {
+    font-size: 30px;
+  }
+  .course1_2 img {
+    width: 200px;
+    height: 150px;
+  }
+  .course1_2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course1_2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course2_2 {
+    grid-area: course2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course2_2 h1 {
+    font-size: 30px;
+  }
+  .course2_2 img {
+    width: 200px;
+    height: 140px;
+  }
+  .course2_2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course2_2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .course4_2 {
+    grid-area: course4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 3px solid #52eae7;
+    border-radius: 40px;
+    margin: 25px;
+  }
+  .course4_2 h1 {
+    font-size: 30px;
+  }
+  .course4_2 img {
+    width: 100px;
+    height: 100px;
+  }
+  .course4_2 button {
+    width: 150px;
+    padding: 15px;
+    background-color: #52eae7;
+    border-radius: 30px;
+  }
+  .course4_2 button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .pagination {
+    grid-area: pag;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .pagination a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #52eae7;
+    text-align: center;
+  }
+  .active {
+    border: 3px solid #52eae7;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  /* end of body2 */
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer .left {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+  }
+  .footer .left h1 {
+    font-size: 20px;
+  }
+  .footer .left a {
+    text-decoration: none;
+    color: grey;
+  }
+  .footer .left p {
+    color: white;
+    text-align: center;
+  }
+  .footer .right {
+    margin: 0;
+    width: 250px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .footer .right h1 {
+    font-size: 20px;
+  }
+  .footer .right i {
+    margin-right: 20px;
+  }
+  .footer .right p {
+    color: white;
+    font-size: 12px;
+  }
 }
