@@ -884,21 +884,21 @@ h1 {
 @media (min-width: 320px) and (max-width: 425px) {
   .grid1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 300px 1000px 350px;
     grid-template-areas:
-      "navbar navbar navbar"
-      "body body body"
-      "footer footer footer";
+      "navbar "
+      "body"
+      "footer";
   }
   .grid2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 300px 2800px 250px;
     grid-template-areas:
-      "navbar navbar navbar"
-      "body body body"
-      "footer footer footer";
+      "navbar"
+      "body"
+      "footer";
   }
   .navbar {
     grid-area: navbar;

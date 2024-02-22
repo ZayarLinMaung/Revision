@@ -1,0 +1,35 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 300px 300px 200px;
+  gap: 20px;
+  grid-template-areas:
+    "one one one"
+    "two three three"
+    "two four five"
+    "six six six";
+}
+.one {
+  grid-area: one;
+  background-color: red;
+}
+.two {
+  grid-area: two;
+  background-color: black;
+}
+.three {
+  grid-area: three;
+  background-color: grey;
+}
+.four {
+  grid-area: four;
+  background-color: aqua;
+}
+.five {
+  grid-area: five;
+  background-color: blue;
+}
+.six {
+  grid-area: six;
+  background-color: burlywood;
+}
