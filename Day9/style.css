@@ -7,7 +7,7 @@ body {
 section {
   display: grid;
   grid-template-rows: 50px 150px 500px 500px 500px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 280px repeat(3, 1fr);
   grid-template-areas:
     "nav nav nav nav"
     "side body body body"
@@ -172,7 +172,7 @@ section {
   left: 0%;
 }
 .div3 {
-  height: 250px;
+  height: 430px;
   border-bottom: 1px solid grey;
   margin: 5px;
 }
@@ -185,6 +185,11 @@ section {
 .div3 .channel3,
 .div3 .channel4,
 .div3 .channel5,
+.div3 .channel6,
+.div3 .channel7,
+.div3 .channel8,
+.div3 .channel9,
+.div3 .channel10,
 .div3 .more {
   margin-left: 20px;
   margin-bottom: 10px;
@@ -194,7 +199,12 @@ section {
 .div3 .channel2 i,
 .div3 .channel3 i,
 .div3 .channel4 i,
-.div3 .channel5 i {
+.div3 .channel5 i,
+.div3 .channel6 i,
+.div3 .channel7 i,
+.div3 .channel8 i,
+.div3 .channel9 i,
+.div3 .channel10 i {
   position: absolute;
   top: -10%;
   border: 1px solid grey;
@@ -210,6 +220,11 @@ section {
 .div3 .channel3 p,
 .div3 .channel4 p,
 .div3 .channel5 p,
+.div3 .channel6 p,
+.div3 .channel7 p,
+.div3 .channel8 p,
+.div3 .channel9 p,
+.div3 .channel10 p,
 .div3 .more p {
   margin-left: 30px;
 }
@@ -230,4 +245,180 @@ section {
 }
 .body {
   grid-area: body;
+}
+.body .algo {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+.body .algo div {
+  width: auto;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  text-align: center;
+}
+.body .algo .selected {
+  background-color: white;
+  color: black;
+}
+.videos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(2, 350px);
+  grid-template-areas:
+    "video1 video2 video3 video4 video5"
+    "video6 video7 video8 video9 video10";
+  gap: 20px;
+}
+.videos .video1 {
+  grid-area: video1;
+  position: relative;
+}
+.videos .video2 {
+  grid-area: video2;
+  position: relative;
+}
+.videos .video3 {
+  grid-area: video3;
+  position: relative;
+}
+.videos .video4 {
+  grid-area: video4;
+  position: relative;
+}
+.videos .video5 {
+  grid-area: video5;
+  position: relative;
+}
+.videos .video6 {
+  grid-area: video6;
+  position: relative;
+}
+.videos .video7 {
+  grid-area: video7;
+  position: relative;
+}
+.videos .video8 {
+  grid-area: video8;
+  position: relative;
+}
+.videos .video9 {
+  grid-area: video9;
+  position: relative;
+}
+.videos .video10 {
+  grid-area: video10;
+  position: relative;
+}
+.videos .video1 img,
+.videos .video2 img,
+.videos .video3 img,
+.videos .video4 img,
+.videos .video5 img,
+.videos .video6 img,
+.videos .video7 img,
+.videos .video8 img,
+.videos .video9 img,
+.videos .video10 img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.videos .video1 i,
+.videos .video2 i,
+.videos .video3 i,
+.videos .video4 i,
+.videos .video5 i,
+.videos .video6 i,
+.videos .video7 i,
+.videos .video8 i,
+.videos .video9 i,
+.videos .video10 i {
+  font-size: 25px;
+  left: 0%;
+  bottom: 27%;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+}
+.videos .video1 h3,
+.videos .video2 h3,
+.videos .video3 h3,
+.videos .video4 h3,
+.videos .video5 h3,
+.videos .video6 h3,
+.videos .video7 h3,
+.videos .video8 h3,
+.videos .video9 h3,
+.videos .video10 h3 {
+  position: absolute;
+  left: 19%;
+  bottom: 22%;
+  font-size: 18px;
+}
+.videos .video1 .info .channel,
+.videos .video2 .info .channel,
+.videos .video3 .info .channel,
+.videos .video4 .info .channel,
+.videos .video5 .info .channel,
+.videos .video6 .info .channel,
+.videos .video7 .info .channel,
+.videos .video8 .info .channel,
+.videos .video9 .info .channel,
+.videos .video10 .info .channel {
+  position: absolute;
+  bottom: 17%;
+  left: 18%;
+}
+.videos .video1 .info .views,
+.videos .video2 .info .views,
+.videos .video3 .info .views,
+.videos .video4 .info .views,
+.videos .video5 .info .views,
+.videos .video6 .info .views,
+.videos .video7 .info .views,
+.videos .video8 .info .views,
+.videos .video9 .info .views,
+.videos .video10 .info .views {
+  position: absolute;
+  bottom: 10%;
+  left: 18%;
+}
+.videos .video1 .info p,
+.videos .video2 .info p,
+.videos .video3 .info p,
+.videos .video4 .info p,
+.videos .video5 .info p,
+.videos .video6 .info p,
+.videos .video7 .info p,
+.videos .video8 .info p,
+.videos .video9 .info p,
+.videos .video10 .info p {
+  position: absolute;
+  bottom: 10%;
+  left: 52%;
+}
+.videos .video1 .info i,
+.videos .video2 .info i,
+.videos .video3 .info i,
+.videos .video4 .info i,
+.videos .video7 .info i,
+.videos .video8 .info i,
+.videos .video9 .info i,
+.videos .video10 .info i {
+  position: absolute;
+  font-size: 5px;
+  bottom: 14%;
+  left: 42%;
+  border: none;
+}
+.videos .video5 .info i,
+.videos .video6 .info i {
+  position: absolute;
+  font-size: 5px;
+  bottom: 14%;
+  left: 43.5%;
+  border: none;
 }
