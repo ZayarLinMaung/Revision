@@ -1,0 +1,232 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #555555;
+}
+.container {
+  position: relative;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: black;
+  border-bottom: 2px solid rgb(0, 255, 0);
+  margin: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+}
+.logo {
+  width: 40px;
+}
+.body {
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 105px repeat(3, 694px) repeat(3, 570px);
+  grid-template-areas:
+    "d1 d1"
+    "d2 d2"
+    "d3 d3"
+    "d4 d4"
+    "d5 d6"
+    "d7 d8"
+    "d9 d10";
+  gap: 6px;
+}
+.body .div1 {
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 0px;
+  background-color: #555555;
+  color: white;
+  margin-top: 66px;
+  font-size: 15px;
+  height: 30px;
+  grid-area: d1;
+}
+.body .div1 a {
+  text-decoration: none;
+  color: white;
+}
+.body .div1 a:hover {
+  text-decoration: underline solid;
+}
+
+.body .div2,
+.body .div3,
+.body .div4,
+.body .div5,
+.body .div6,
+.body .div7,
+.body .div8,
+.body .div9,
+.body .div10 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body .div2 span,
+.body .div3 span,
+.body .div4 span,
+.body .div5 span,
+.body .div6 span,
+.body .div7 span,
+.body .div8 span,
+.body .div9 span,
+.body .div10 span {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.body .div2 span h1,
+.body .div3 span h1,
+.body .div4 span h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.body .div5 span h1,
+.body .div6 span h1,
+.body .div7 span h1,
+.body .div8 span h1,
+.body .div9 span h1,
+.body .div10 span h1 {
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  width: 900px;
+}
+.body .div2 span h4,
+.body .div3 span h4,
+.body .div4 span h4 {
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.body .div5 span h4,
+.body .div6 span h4,
+.body .div7 span h4,
+.body .div8 span h4,
+.body .div9 span h4,
+.body .div10 span h4 {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.body .div2 span a,
+.body .div3 span a,
+.body .div4 span a,
+.body .div5 span a,
+.body .div6 span a,
+.body .div7 span a,
+.body .div8 span a,
+.body .div9 span a,
+.body .div10 span a {
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.body .div2 span a span,
+.body .div3 span a span,
+.body .div4 span a span,
+.body .div5 span a span,
+.body .div6 span a span,
+.body .div7 span a span,
+.body .div8 span a span,
+.body .div9 span a span,
+.body .div10 span a span {
+  position: absolute;
+  left: 115px;
+  top: 50%;
+  color: rgb(0, 255, 0);
+}
+.body .div3 span a span {
+  position: absolute;
+  left: 80px;
+}
+.body .div2 span a:hover,
+.body .div3 span a:hover,
+.body .div4 span a:hover,
+.body .div5 span a:hover,
+.body .div6 span a:hover,
+.body .div7 span a:hover,
+.body .div8 span a:hover,
+.body .div9 span a:hover,
+.body .div10 span a:hover {
+  text-decoration: underline solid;
+}
+.body .div2 img,
+.body .div3 img,
+.body .div4 img {
+  width: 100%;
+  width: 100%;
+}
+.body .div5 img,
+.body .div6 img,
+.body .div7 img,
+.body .div8 img,
+.body .div9 img,
+.body .div10 img {
+  width: 100%;
+  height: 100%;
+}
+.body .div2 {
+  grid-area: d2;
+}
+.body .div3 {
+  grid-area: d3;
+}
+.body .div4 {
+  grid-area: d4;
+}
+.body .div5 {
+  grid-area: d5;
+}
+.body .div6 {
+  grid-area: d6;
+}
+.body .div7 {
+  grid-area: d7;
+}
+.body .div8 {
+  grid-area: d8;
+}
+.body .div9 {
+  grid-area: d9;
+}
+.body .div10 {
+  grid-area: d10;
+}
