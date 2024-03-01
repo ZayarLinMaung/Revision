@@ -35,7 +35,7 @@ body {
 .body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 105px repeat(3, 553px) repeat(3, 570px) 400px;
+  grid-template-rows: 105px repeat(3, 693px) repeat(3, 575px) 400px;
   grid-template-areas:
     "d1 d1"
     "d2 d2"
@@ -211,16 +211,15 @@ body {
   display: flex;
   height: 400px;
   justify-content: center;
-  gap: 50px;
 }
 .body .div11 .top {
   background-color: #111111;
   color: white;
   display: flex;
   justify-content: center;
-  gap: 50px;
-  height: 300px;
-  border-bottom: 1px solid grey;
+  gap: 30px;
+  width: 1000px;
+  height: 400px;
 }
 .body .div11 .top .d1,
 .body .div11 .top .d2,
@@ -228,7 +227,7 @@ body {
 .body .div11 .top .d4,
 .body .div11 .top .d5,
 .body .div11 .top .d6 {
-  line-height: 25px;
+  line-height: 27px;
   margin-top: 20px;
 }
 .body .div11 .top .d1 h1,
@@ -240,10 +239,13 @@ body {
   font-size: 12px;
   margin: 0px;
   font-weight: normal;
+  width: 150px;
 }
 .body .div11 .top .d6 h1 {
   font-size: 15px;
   color: rgb(0, 255, 0);
+  margin-left: 0px;
+  width: 300px;
 }
 .body .div11 .top .d1 a,
 .body .div11 .top .d2 a,
@@ -254,13 +256,64 @@ body {
   text-decoration: none;
   color: grey;
 }
-.body .div11 .top .d1 :hover,
-.body .div11 .top .d2 :hover,
-.body .div11 .top .d3 :hover,
-.body .div11 .top .d4 :hover,
-.body .div11 .top .d5 :hover {
+.body .div11 .top .d5 a {
+  font-size: 12px;
+}
+.body .div11 .top .d1 a:hover,
+.body .div11 .top .d2 a:hover,
+.body .div11 .top .d3 a:hover,
+.body .div11 .top .d4 a:hover,
+.body .div11 .top .d5 a:hover {
   text-decoration: underline solid;
   color: white;
+}
+.body .div11 .top .d5 :hover {
+  text-decoration: none;
+  color: grey;
+}
+.body .div11 .bottom {
+  position: absolute;
+  left: 350px;
+  bottom: 30px;
+  font-size: 12px;
+  color: grey;
+}
+.body .div11 .bottom .botnav {
+  position: absolute;
+  left: 280px;
+  bottom: 0px;
+  width: 500px;
+}
+.body .div11 .bottom .botnav a {
+  text-decoration: none;
+  color: grey;
+}
+.body .div11 .bottom .botnav span {
+  margin: 20px;
+}
+.body .div11 .bottom .botnav a:hover {
+  color: white;
+  text-decoration: underline solid;
+}
+.body .div11 .bottom .location {
+  position: absolute;
+  right: -950px;
+  bottom: 0px;
+}
+.body .div11 .bottom .location a {
+  color: grey;
+  text-decoration: none;
+}
+.body .div11 .bottom .location a:hover {
+  color: white;
+  text-decoration: underline solid;
+}
+.body .div11 .colborder {
+  height: 1px;
+  width: 63vw;
+  position: absolute;
+  top: 340px;
+  background-color: grey;
 }
 .body .div2 {
   grid-area: d2;
