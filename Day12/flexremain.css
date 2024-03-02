@@ -1,0 +1,30 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div1,
+.div2,
+.div3,
+.division4 {
+  background-color: grey;
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+}
+.div1 {
+  order: 1;
+}
+.div2 {
+  order: 2;
+}
+.div3 {
+  order: 3;
+}
+.division4 {
+  order: 4;
+}
+
+div:last-child {
+  background-color: orange;
+}
