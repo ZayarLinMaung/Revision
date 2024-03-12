@@ -1,0 +1,93 @@
+body {
+  background-color: black;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.textanimation {
+  position: relative;
+  background-color: aquamarine;
+  width: 1000px;
+  animation: slide 3s ease forwards;
+  color: black;
+}
+.textanimation h2 {
+  position: relative;
+  top: 0;
+}
+@keyframes slide {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(300px, 0);
+  }
+}
+.main {
+  margin: 30px;
+  border: 3px solid gold;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: relative;
+  animation: rotate 3s linear;
+  animation-iteration-count: infinite;
+  background-color: black;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-image: url("quas.webp");
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  position: absolute;
+  top: -22px;
+  left: 100px;
+}
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-image: url("wex.webp");
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -25px;
+  left: 100px;
+}
+.div3 {
+  width: 100px;
+  height: 100px;
+  background-image: url("exort.webp");
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  position: absolute;
+  top: 190px;
+  left: 450px;
+}
+.invoker {
+  position: absolute;
+  top: 530px;
+  left: 170px;
+  z-index: 2;
+}
+.typinganimation::after {
+  content: "|";
+  animation: blink 0.5s linear infinite alternate-reverse;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
