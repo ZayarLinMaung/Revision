@@ -27,7 +27,7 @@ body {
     "test test test test"
     "div8 div8 div8 div8"
     "footer footer footer footer";
-  grid-template-rows: 1100px repeat(3, 500px) 600px 500px;
+  grid-template-rows: 1100px repeat(3, 500px) 600px 500px 300px;
 }
 .nav {
   grid-area: nav;
@@ -161,6 +161,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .div4 h1 {
   position: absolute;
   left: 170px;
@@ -198,6 +199,7 @@ body {
   grid-area: div6;
   background: url("sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
   background-repeat: no-repeat;
+
   background-size: cover;
   background-position: center;
   color: hsl(198, 62%, 26%);
@@ -297,6 +299,33 @@ body {
   background: url("sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: hsl(168, 34%, 34%);
+  background-color: hsl(168, 48%, 67%);
+  font-family: barlow;
+  text-align: center;
+}
+.footer .links {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.footer .links a {
+  text-decoration: none;
+  color: hsl(168, 34%, 34%);
+  text-align: center;
+}
+.footer .sm {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 @media (min-width: 1441px) {
   .nav .middle {
@@ -459,7 +488,7 @@ body {
       "test"
       "div8"
       "footer";
-    grid-template-rows: 950px repeat(6, 500px) 1000px 3000px;
+    grid-template-rows: 950px repeat(6, 500px) 1000px 1500px 400px;
   }
   .nav {
     background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
@@ -577,23 +606,27 @@ body {
   .div8 .sub2,
   .div8 .sub3,
   .div8 .sub4 {
-    width: 768px;
+    width: 384px;
     background: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .div8 .sub2 {
     background: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .div8 .sub3 {
     background: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .div8 .sub4 {
     background: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -611,7 +644,7 @@ body {
       "test"
       "div8"
       "footer";
-    grid-template-rows: 950px repeat(6, 500px) 1000px 1200px;
+    grid-template-rows: 950px repeat(6, 500px) 1000px 1200px 400px;
   }
   .nav .middle {
     font-family: fraunces;
@@ -699,7 +732,7 @@ body {
       "test"
       "div8"
       "footer";
-    grid-template-rows: 950px repeat(6, 500px) 1000px 1000px;
+    grid-template-rows: 950px repeat(6, 500px) 1000px 1000px 300px;
   }
   .nav .middle {
     font-family: fraunces;
@@ -792,7 +825,7 @@ body {
   .div8 .sub2,
   .div8 .sub3,
   .div8 .sub4 {
-    width: 37px;
+    width: 375px;
     background-position: center;
   }
 }
