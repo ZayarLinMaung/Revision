@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  font-family: monospace;
+}
+
+.container {
+  width: 90vw;
+  box-shadow: 0px 0px 50px rgba(126, 172, 2, 0.8);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 90vh;
+  padding-left: 0px;
+}
+.left {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: 30px;
+  border-right: 2px solid rgba(126, 172, 2, 0.8);
+}
+.left h1 {
+  color: rgb(30, 255, 0);
+  font-size: 50px;
+}
+.left .bot {
+  display: flex;
+  gap: 10px;
+}
+#taskinput {
+  width: 100px;
+  padding: 10px;
+  font-family: monospace;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(30, 255, 0);
+}
+.left .bot .addtask {
+  width: 150px;
+  font-family: monospace;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(30, 255, 0);
+}
+#taskinput:focus {
+  outline: none;
+  font-family: monospace;
+  color: rgb(30, 255, 0);
+  background-color: #000;
+}
+.right {
+  grid-column: 2/3;
+  overflow-y: scroll;
+}
+li {
+  color: rgb(30, 255, 0);
+  font-size: 20px;
+  margin-right: 0px;
+  list-style-type: disc;
+}
+.right button {
+  font-family: monospace;
+  background: transparent;
+  color: rgb(30, 255, 0);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.right::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+.right::-webkit-scrollbar-track {
+  background: black; /* Color of the track */
+}
+
+/* Handle */
+.right::-webkit-scrollbar-thumb {
+  background: rgb(30, 255, 0); /* Color of the handle */
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 90vw;
+    height: 90vh;
+    box-shadow: 0px 0px 50px rgba(187, 255, 0, 0.8);
+    display: grid;
+    grid-template-areas:
+      "left"
+      "right";
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 60vh;
+  }
+  .left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 30px;
+    border: none;
+    border-bottom: 2px solid rgba(126, 172, 2, 0.8);
+  }
+  .right {
+    grid-area: right;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
