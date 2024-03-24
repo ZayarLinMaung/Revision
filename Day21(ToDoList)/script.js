@@ -7,7 +7,7 @@ function addTask() {
     listItem.textContent = taskText;
 
     const delButton = document.createElement("button");
-    delButton.textContent = "Delete";
+    delButton.textContent = "X";
     delButton.addEventListener("click", function () {
       listItem.remove();
     });
