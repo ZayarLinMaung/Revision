@@ -1,0 +1,213 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 550px;
+  grid-area: 20px;
+  padding: 20px;
+  background-color: rgb(178, 179, 182);
+  border-radius: 30px;
+  position: relative;
+}
+.display {
+  width: 40vw;
+  height: 100px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: rgb(62, 62, 62);
+  border-radius: 100px;
+  color: rgb(240, 172, 82);
+  font-size: 50px;
+  position: absolute;
+  top: 30px;
+  text-align: right;
+}
+.row1,
+.row2,
+.row3,
+.row4 {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.row1 {
+  position: absolute;
+  top: 140px;
+}
+.row2 {
+  position: absolute;
+  top: 250px;
+}
+.row3 {
+  position: absolute;
+  top: 360px;
+  left: 25px;
+}
+.row4 {
+  position: absolute;
+  left: 25px;
+  top: 470px;
+}
+button {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(240, 172, 82);
+  border-radius: 100px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+.op {
+  background-color: black;
+  color: rgb(240, 172, 82);
+}
+.opeq {
+  height: 210px;
+  background-color: black;
+  color: rgb(240, 172, 82);
+  position: absolute;
+  bottom: 0;
+  right: -125px;
+}
+button:hover {
+  color: white;
+}
+@media (max-width: 1024px) {
+  button {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(240, 172, 82);
+    border-radius: 100px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+  }
+  .opeq {
+    height: 180px;
+    background-color: black;
+    color: rgb(240, 172, 82);
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 550px;
+    grid-area: 20px;
+    padding: 20px;
+    background-color: rgb(178, 179, 182);
+    border-radius: 30px;
+    position: relative;
+  }
+  .display {
+    width: 55vw;
+    height: 100px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(62, 62, 62);
+    border-radius: 100px;
+    color: rgb(240, 172, 82);
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    text-align: right;
+  }
+  .row3 {
+    position: absolute;
+    top: 360px;
+    left: 45px;
+  }
+  .row4 {
+    position: absolute;
+    left: 45px;
+    top: 470px;
+  }
+  .opeq {
+    height: 180px;
+    background-color: black;
+    color: rgb(240, 172, 82);
+    position: absolute;
+    bottom: 0;
+    right: -90px;
+  }
+}
+@media (max-width: 450px) {
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 550px;
+    grid-area: 20px;
+    padding: 20px;
+    background-color: rgb(178, 179, 182);
+    border-radius: 30px;
+    position: relative;
+  }
+  .display {
+    width: 85vw;
+    height: 100px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(62, 62, 62);
+    border-radius: 100px;
+    color: rgb(240, 172, 82);
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    text-align: right;
+  }
+  .row3 {
+    position: absolute;
+    top: 360px;
+    left: 10px;
+  }
+  .row4 {
+    position: absolute;
+    left: 10px;
+    top: 470px;
+  }
+  .opeq {
+    height: 180px;
+    background-color: black;
+    color: rgb(240, 172, 82);
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+  }
+}
+@media (max-width: 375px) {
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 550px;
+    grid-area: 20px;
+    padding: 20px;
+    background-color: rgb(178, 179, 182);
+    border-radius: 30px;
+    position: relative;
+  }
+}
