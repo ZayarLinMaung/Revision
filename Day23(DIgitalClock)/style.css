@@ -1,0 +1,46 @@
+@font-face {
+  font-family: xeroda;
+  src: url(XerodaRegular-p7dwr.otf);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: xeroda;
+  background: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  opacity: 60%;
+}
+.clockdisplay {
+  position: absolute;
+  font-size: 100px;
+  color: azure;
+}
+.clockdisplay h1 {
+  font-size: 70px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .clockdisplay {
+    position: absolute;
+    font-size: 70px;
+    color: azure;
+  }
+}
