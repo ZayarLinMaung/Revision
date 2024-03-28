@@ -9,6 +9,9 @@ export default {
     increment() {
       this.count++;
     },
+    decrement() {
+      this.count--;
+    },
   },
 };
 </script>
@@ -17,8 +20,9 @@ export default {
   <head></head>
   <body>
     <div>
-      <button @click="increment">Increase</button>
       <p>Count : {{ count }}</p>
+      <button @click="increment">Increase</button>
+      <button @click="decrement">Decrease</button>
     </div>
   </body>
 </template>
