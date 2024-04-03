@@ -1,26 +1,75 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>To-Do List</h1>
+    <input
+      v-model="newTask"
+      type="text"
+      @keyup.enter="addTask"
+      placeholder="Enter a task"
+    />
+    <button v-on:click="addTask">Add Task</button>
+    <ul>
+      <li v-for="(task, index) in tasks" :key="index">
+        <input
+          v-model="tasks[index]"
+          type="text"
+          @keyup.enter="saveTask(index)"
+        />
+        <button v-on:click="deleteTask(index)">Delete</button>
+      </li>
+    </ul>
+  </div>
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
+  data() {
+    return {
+      newTask: "",
+      tasks: [],
+    };
+  },
+  mounted() {
+    const storedTasks = localStorage.getItem("tasks");
+    if (storedTasks) {
+      this.tasks = JSON.parse(storedTasks);
+    }
+  },
+  methods: {
+    addTask() {
+      if (this.newTask.trim()) {
+        this.tasks.push(this.newTask);
+        this.saveToLocal();
+        this.newTask = "";
+      }
+    },
+    deleteTask(index) {
+      this.tasks.splice(index, 1);
+      this.saveToLocal();
+    },
+    saveTask(index) {
+      if (this.tasks[index]) {
+        this.tasks[index] = this.tasks[index];
+        this.saveToLocal();
+      }
+    },
+    saveToLocal() {
+      localStorage.setItem("tasks", JSON.stringify(this.tasks));
+    },
   },
 };
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ul {
+  list-style-type: decimal;
+}
+ul li input {
+  border: none;
+}
+ul li input:focus {
+  outline: none;
+  border-bottom: 2px dashed black;
+}
+ul li button {
+  margin-left: 10px;
 }
 </style>
