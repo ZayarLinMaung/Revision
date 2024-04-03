@@ -7,7 +7,6 @@
       <div v-html="link"></div>
       <h2 v-if="val >= 5">val is greater than or equal 5</h2>
       <h2 v-else="val < 5">val is less than 5</h2>
-      <h2 v-for="(n, index) in names">{{ index }} {{ n }}</h2>
     </div>
   </section>
   <section>
@@ -26,7 +25,6 @@ export default {
       link: "<a href='#'>This is a link</a>",
       val: 4,
       display: false,
-      names: ["Jesus", "ZLM", "GOAT"],
     };
   },
   methods: {
