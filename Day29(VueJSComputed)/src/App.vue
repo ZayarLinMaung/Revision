@@ -5,7 +5,7 @@
   </div>
   <div>
     <input v-model="originalVal" type="text" />
-    <h1>Squared Result{{ squared }}</h1>
+    <h1>Squared Result : {{ squared }}</h1>
   </div>
 </template>
 <script>
