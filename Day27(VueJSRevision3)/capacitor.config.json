@@ -1,8 +1,0 @@
-{
-  "appId": "com.todo.app",
-  "appName": "todolist",
-  "webDir": "dist",
-  "server": {
-    "androidScheme": "https"
-  }
-}
