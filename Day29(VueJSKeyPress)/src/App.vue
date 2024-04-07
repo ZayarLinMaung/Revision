@@ -4,7 +4,7 @@
       <div
         class="flex flex-col justify-center border-r-[2px] border-r-cyan-200 overflow-x-hidden w-[50vw] items-center"
       >
-        <h1 class="text-cyan-200 text-[40px] text-center">To-Do List</h1>
+        <h1 class="text-cyan-200 text-[40px] text-center">To-Do List 2.0</h1>
         <input
           v-model="addedTask"
           @keydown.enter="HandleEvent"
