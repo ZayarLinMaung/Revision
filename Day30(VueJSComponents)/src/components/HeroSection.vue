@@ -3,7 +3,7 @@
     <div>
       <h2 class="text-[70px] z-50 mt-[100px]">{{ title1 }}</h2>
       <h1 class="text-[100px] z-50">{{ title2 }}</h1>
-      <h2 class="text-[40px] z-50">{{ jobs }}</h2>
+      <h2 class="text-[40px] z-50 w-[700px]">{{ jobs }}</h2>
       <div
         class="absolute -left-[200px] top-[180px] w-[500px] h-[70px] bg-violet-200 z-0 rounded-full rotate-[40deg]"
       ></div>
@@ -34,7 +34,7 @@ export default {
     return {
       title1: "Hello, I'm",
       title2: "Zayar Lin Maung",
-      jobs: "Founder, Principal and Instructor of Genesis",
+      jobs: "Founder, Principal and Instructor of Genesis Academy",
     };
   },
 };
