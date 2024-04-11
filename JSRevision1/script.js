@@ -77,3 +77,34 @@ even = arr3.filter(function (number, index) {
   return arr3[index] % 2 === 0;
 });
 console.log(even);
+
+//functions
+function test() {
+  console.log("Hello World");
+}
+test();
+//functions with parameters/arguments
+function add(x, y) {
+  return x + y;
+}
+let d = add(a, b);
+console.log(d);
+//function expression
+let funSum = function sum(x, y) {
+  return x + y;
+};
+console.log(funSum(10, 30));
+//anonymous function
+let addition = function (x, y) {
+  return x + y;
+};
+console.log(addition(10, 30));
+//arrow function
+let arrFun = (x, y) => x + y;
+arrFun(10, 10);
+
+const text = document.querySelector("h1");
+const btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+  text.style.color = "blue";
+});
