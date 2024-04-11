@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="relative h-[92vh] flex align-middle justify-around p-4 text-white"
-  >
+  <div class="relative flex align-middle justify-around p-4 text-white">
     <div>
       <h2 class="text-[70px] z-50 mt-[100px]">{{ title1 }}</h2>
       <h1 class="text-[100px] z-50">{{ title2 }}</h1>
@@ -20,7 +18,13 @@
       ></div>
       <p></p>
     </div>
-    <div></div>
+    <div>
+      <img
+        src="..\assets\photo_2024-02-21_10-40-48.jpg"
+        alt=""
+        class="w-[500px] absolute top-[100px] right-[200px] rounded-full shadow-2xl shadow-white"
+      />
+    </div>
   </div>
 </template>
 
